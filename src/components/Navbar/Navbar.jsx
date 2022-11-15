@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NavBar, Logo, Menu } from "./styles"
 
 function Navbar() {
@@ -8,7 +9,7 @@ function Navbar() {
         <nav>
           <Menu>
             <li>
-              <a href="#" className="error">Login</a>
+              <Link to="/login" className="error">Login</Link>
             </li>
             <li>
               <a href="#">Registro</a>

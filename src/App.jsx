@@ -1,13 +1,13 @@
+import { RouterProvider } from "react-router-dom";
 import { GlobalStyle } from "./assets/style/globalStyle";
-import { Banner } from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
-import { Home } from "./Pages/Home/Home";
+import { router } from "./Router";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home/>
+      <RouterProvider router={router} />
       <GlobalStyle />
     </>
   );
